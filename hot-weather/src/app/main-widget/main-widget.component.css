@@ -1,3 +1,28 @@
 .holder {
 	margin: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+	max-width: 455px;
+	background: #fff;
+}
+
+.hold-img {
+	margin: 0;
+}
+
+.hold-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.tabs {
+	text-align: center;
+	padding: 10px;
+	background: #fda660;
+}
+
+.holder-list-plases {
+	color: #000;
+	text-align: center;
 }
