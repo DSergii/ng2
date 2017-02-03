@@ -1,0 +1,25 @@
+.info-widget {
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.main-block {
+	background: #fd7b87;
+	padding: 20px;
+}
+
+.hold-img {
+	margin: 0;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	margin: 0 auto;
+}
+
+.hold-img img {
+	display: block;
+	width: 100%;
+	height: auto;
+}

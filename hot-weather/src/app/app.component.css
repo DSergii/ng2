@@ -1,0 +1,23 @@
+
+h1 {
+	display: block;
+	margin: 0 0 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.sidebar {
+	margin: 20px;
+}

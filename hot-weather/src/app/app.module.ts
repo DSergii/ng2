@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
+import { FooterWidgetComponent } from './footer-widget/footer-widget.component';
+import { MainWidgetComponent } from './main-widget/main-widget.component';
+import { InfoWidgetComponent } from './info-widget/info-widget.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherWidgetComponent,
+    FooterWidgetComponent,
+    MainWidgetComponent,
+    InfoWidgetComponent
   ],
   imports: [
     BrowserModule,
