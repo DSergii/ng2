@@ -1,6 +1,6 @@
 <div class="holder">
 	<figure class="hold-img">
-		<img src="../../images/1.jpg" alt="">
+		<img [src]="placeImg" alt="">
 	</figure>
 	<div class="tabs">
 		<p>Тут должны быть табы</p>
@@ -8,7 +8,15 @@
 	<div class="holder-list-plases">
 		<h5>Righteous indignation & like</h5>
 		<ul class="place-list">
-			
+			<li *ngFor="let place of places" (click)="showPlace(place)">
+				<strong class="title">{{place.title}}</strong>
+				<div class="place-box">
+					<figure class="hold-img">
+						<img src="{{place.img}}" alt="">
+					</figure>
+					<span class="text">{{place.description}}</span>
+				</div>
+			</li>
 		</ul>
 	</div>
 </div>

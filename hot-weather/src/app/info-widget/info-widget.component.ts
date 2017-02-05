@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info-widget',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoWidgetComponent implements OnInit {
 
-  constructor() { }
+	@Input()
+	public info:any = {title:'SHTA',img:'../../images/1.jpg'};
+	// @Input()
+	// public title:string = '';
 
-  ngOnInit() {
-  }
+	constructor() { 
+
+	}
+
+	ngOnInit() {
+	}
 
 }

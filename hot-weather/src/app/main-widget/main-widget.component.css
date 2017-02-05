@@ -26,3 +26,31 @@
 	color: #000;
 	text-align: center;
 }
+
+.place-list {
+	margin: 0;
+	padding: 0 15px;
+	list-style: none;
+	height: 200px;
+	overflow-y: auto;
+}
+
+.place-list li {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.place-box {
+	overflow: hidden;
+	width: 100%;
+	text-align: left;
+}
+
+.place-box .hold-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+
+}

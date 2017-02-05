@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-weather-widget',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherWidgetComponent implements OnInit {
 
-  constructor() { }
+	public title: string = 'Погода в вашем городе';
 
-  ngOnInit() {
-  }
+	@Input()
+	public weather:string = '';
+
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

@@ -1,8 +1,8 @@
 <div class="info-widget">
 	<div class="main-block">
-		<h5>ШТА?</h5>
+		<h5 [innerHTML]="info?.title"></h5>
 		<figure class="hold-img">
-			<img src="" alt="">
+			<img [src]="info?.img" alt="">
 		</figure>
 	</div>
 	<div class="follower-holder">
