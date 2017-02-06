@@ -9,7 +9,7 @@ import { Place } from '../interfaces/plase';
 })
 export class MainWidgetComponent implements OnInit {
 
-	public placeImg: string = '../../assets/1.jpg';
+	public placeImg: string = 'assets/1.jpg';
 
 	public places: any[] = [
 		{
