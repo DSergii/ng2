@@ -16,7 +16,7 @@ h5 {
 
 h5:after {
 	content: '';
-	background: url(../../images/w-line.png);
+	background: url(../../assets/w-line.png);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -39,7 +39,7 @@ h5:after {
 
 .w_box .weather:before {
 	content: '';
-	background: url(../../images/cloudy.png);
+	background: url(../../assets/cloudy.png);
 	width: 50px;
 	height: 50px;
 	display: block;

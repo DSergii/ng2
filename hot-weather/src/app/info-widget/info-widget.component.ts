@@ -15,7 +15,7 @@ export class InfoWidgetComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		this.info = {title:'Nam libero voluptatem',img:'../../images/1.jpg'};
+		this.info = {title:'Nam libero voluptatem',img:'../../assets/1.jpg'};
 	}
 
 }

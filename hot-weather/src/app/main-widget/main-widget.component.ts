@@ -9,27 +9,27 @@ import { Place } from '../interfaces/plase';
 })
 export class MainWidgetComponent implements OnInit {
 
-	public placeImg: string = '../../images/1.jpg';
+	public placeImg: string = '../../assets/1.jpg';
 
 	public places: any[] = [
 		{
 			title: 'Barselona',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../images/barselona.jpg',
+			img: '../../assets/barselona.jpg',
 			weather: '+25',
 			water: '22'
 		},
 		{
 			title: 'Rome',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../images/rome.jpg',
+			img: '../../assets/rome.jpg',
 			weather: '+18',
 			water: '-'
 		},
 		{
 			title: 'Vinice',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../images/venice.jpg',
+			img: '../../assets/venice.jpg',
 			weather: '+22',
 			water: '24'
 		}
