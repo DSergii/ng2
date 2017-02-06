@@ -46,7 +46,7 @@ export class MainWidgetComponent implements OnInit {
 
 	showPlace(e) {
 		this.placeImg = e.img;
-		this.clickByPlace.next(e);
+		this.clickByPlace.emit(e);
 	}
 
 }
