@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
   title = 'Hot weather Widget';
 
-	//@Input()
 	public place:any;
 }

@@ -6,13 +6,38 @@
     margin-bottom: 20px;
 }
 
-.w_box span{
+h5 {
+	font-size: 18px;
+	margin: 0 0 20px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: 400;
+}
+
+h5:after {
+	content: '';
+	background: url(../../images/w-line.png);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.w_box >span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.w_box .weather{
 	font-size: 36px;
 	font-weight: bold;
 	position: relative;
+	display: block;
+	margin-bottom: 20px;
 }
 
-.w_box span:before {
+.w_box .weather:before {
 	content: '';
 	background: url(../../images/cloudy.png);
 	width: 50px;
@@ -20,15 +45,19 @@
 	display: block;
 	position: absolute;
 	top: -10px;
-	left: -50px;
+	left: 9px;
 }
-.w_box span:after {
+.w_box .weather:after {
 	content: '';
 	position: absolute;
 	top: 0;
-	right: -21px;
+	right: 40px;
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
 	border: 2px solid #fff;
+}
+
+.w_box .water {
+	margin-bottom: 0;
 }

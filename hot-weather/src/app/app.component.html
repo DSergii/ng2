@@ -2,7 +2,7 @@
 <div class="container">
 	<app-main-widget (clickByPlace)="place=$event"></app-main-widget>
 	<div class="sidebar">
-		<app-weather-widget [weather]="place?.weather" ></app-weather-widget>
+		<app-weather-widget [w_info]="place" ></app-weather-widget>
 		<app-info-widget [info]="place"></app-info-widget> 
 	</div>
 </div>

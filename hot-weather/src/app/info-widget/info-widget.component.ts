@@ -8,13 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InfoWidgetComponent implements OnInit {
 
 	@Input()
-	public info:any = {title:'SHTA',img:'../../images/1.jpg'};
+	public info:any;
 
 	constructor() { 
 
 	}
 
 	ngOnInit() {
+		this.info = {title:'Nam libero voluptatem',img:'../../images/1.jpg'};
 	}
 
 }

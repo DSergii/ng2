@@ -7,14 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WeatherWidgetComponent implements OnInit {
 
-	public title: string = 'Погода в вашем городе';
+	public title: string = 'Et harum quidem';
 
 	@Input()
-	public weather:string = '';
+	public w_info:any;
 
 	constructor() { }
 
 	ngOnInit() {
+		this.w_info = {weather:"+15",water:"17"};
 	}
 
 }
