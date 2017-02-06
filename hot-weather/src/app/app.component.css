@@ -20,5 +20,6 @@ h1 {
 
 .sidebar {
 	margin: 20px;
-	max-width: 180px;
+	min-width: 180px;
+	width: 17%;
 }

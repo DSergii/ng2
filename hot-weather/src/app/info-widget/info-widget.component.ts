@@ -9,8 +9,6 @@ export class InfoWidgetComponent implements OnInit {
 
 	@Input()
 	public info:any = {title:'SHTA',img:'../../images/1.jpg'};
-	// @Input()
-	// public title:string = '';
 
 	constructor() { 
 

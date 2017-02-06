@@ -1,4 +1,4 @@
-export class Place{
+export interface Place{
 	title: string,
 	description: string,
 	img: string,
