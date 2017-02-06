@@ -15,21 +15,21 @@ export class MainWidgetComponent implements OnInit {
 		{
 			title: 'Barselona',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../assets/barselona.jpg',
+			img: 'assets/barselona.jpg',
 			weather: '+25',
 			water: '22'
 		},
 		{
 			title: 'Rome',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../assets/rome.jpg',
+			img: 'assets/rome.jpg',
 			weather: '+18',
 			water: '-'
 		},
 		{
 			title: 'Vinice',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-			img: '../../assets/venice.jpg',
+			img: 'assets/venice.jpg',
 			weather: '+22',
 			water: '24'
 		}
