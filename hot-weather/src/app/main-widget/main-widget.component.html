@@ -3,7 +3,9 @@
 		<img [src]="placeImg" alt="">
 	</figure>
 	<div class="tabs">
-		<p>Тут должны быть табы</p>
+		<ul class="tab-list">
+			<li *ngFor="let tab of tabs" >{{tab}}</li>
+		</ul>
 	</div>
 	<div class="holder-list-plases">
 		<h5>Righteous indignation & like</h5>
@@ -15,6 +17,8 @@
 						<img src="{{place.img}}" alt="">
 					</figure>
 					<span class="text">{{place.description}}</span>
+					<span class="text">Hotels: <b>{{place.hotels}}</b></span>
+					<span class="text">Clubs: <b>{{place.clubs}}</b></span>
 				</div>
 			</li>
 		</ul>
