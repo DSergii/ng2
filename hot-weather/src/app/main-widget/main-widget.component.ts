@@ -50,6 +50,16 @@ export class MainWidgetComponent implements OnInit {
 				sea: true,
 				clubs: 55,
 				hotels: 98
+			},
+			{
+				title: 'Paris',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+				img: 'assets/parise.jpg',
+				weather: '+22',
+				water: '-',
+				sea: false,
+				clubs: 70,
+				hotels: 100
 			}
 		]
 
