@@ -10,11 +10,13 @@ export class MainWidgetComponent implements OnInit {
 	@Output()
 	public clickByPlace:EventEmitter<Widget.Place> = new EventEmitter();
 	
-	public placeImg: string = 'assets/1.jpg';
+	public placeImg: string;
 
 	public places: Widget.Place[]; 
 
 	public tabs: Array<string>;
+
+	public searchTerm:string;
 
 
 	constructor() { 
@@ -38,7 +40,7 @@ export class MainWidgetComponent implements OnInit {
 				water: '-',
 				sea: false,
 				clubs: 24,
-				hotels: 109
+				hotels: 130
 			},
 			{
 				title: 'Vinice',
@@ -47,7 +49,7 @@ export class MainWidgetComponent implements OnInit {
 				weather: '+22',
 				water: '24',
 				sea: true,
-				clubs: 22,
+				clubs: 55,
 				hotels: 98
 			}
 		]
@@ -57,11 +59,16 @@ export class MainWidgetComponent implements OnInit {
 
 
 	ngOnInit() {
+		this.placeImg = 'assets/1.jpg';
 	}
 
 	showPlace(e) {
 		this.placeImg = e.img;
 		this.clickByPlace.emit(e);
+	}
+
+	searchBy(tab) {
+		this.searchTerm = tab;
 	}
 
 }

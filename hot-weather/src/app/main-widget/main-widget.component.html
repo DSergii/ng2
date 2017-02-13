@@ -4,13 +4,13 @@
 	</figure>
 	<div class="tabs">
 		<ul class="tab-list">
-			<li *ngFor="let tab of tabs" >{{tab}}</li>
+			<li *ngFor="let tab of tabs" (click)="searchBy(tab)">{{tab}}</li>
 		</ul>
 	</div>
 	<div class="holder-list-plases">
 		<h5>Righteous indignation & like</h5>
 		<ul class="place-list">
-			<li *ngFor="let place of places" (click)="showPlace(place)">
+			<li *ngFor="let place of places | trackBy:searchTerm" (click)="showPlace(place)">
 				<strong class="title">{{place.title}}</strong>
 				<div class="place-box">
 					<figure class="hold-img">
