@@ -79,6 +79,10 @@
 	position: relative;
 }
 
+.tab-list li.active {
+	color: #5fb3f9;
+}
+
 .tab-list li:first-child:before {
 	content: none;
 }

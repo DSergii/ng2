@@ -4,7 +4,7 @@
 	</figure>
 	<div class="tabs">
 		<ul class="tab-list">
-			<li *ngFor="let tab of tabs" (click)="searchBy(tab)">{{tab}}</li>
+			<li *ngFor="let tab of tabs" (click)="searchBy(tab)" [ngClass]="{'active': tab === searchTerm}">{{tab}}</li>
 		</ul>
 	</div>
 	<div class="holder-list-plases">
