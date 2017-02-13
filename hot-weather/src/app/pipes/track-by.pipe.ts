@@ -28,7 +28,6 @@ export class TrackByPipe implements PipeTransform {
 		    return a.hotels < b.hotels;
 		});
     }
-    
 
   }
 

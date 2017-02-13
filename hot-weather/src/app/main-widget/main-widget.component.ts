@@ -18,7 +18,6 @@ export class MainWidgetComponent implements OnInit {
 
 	public searchTerm:string;
 
-
 	constructor() { 
 
 		this.places = [
