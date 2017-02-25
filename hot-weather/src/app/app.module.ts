@@ -8,6 +8,7 @@ import { WeatherWidgetComponent } from './weather-widget/weather-widget.componen
 import { FooterWidgetComponent } from './footer-widget/footer-widget.component';
 import { MainWidgetComponent } from './main-widget/main-widget.component';
 import { InfoWidgetComponent } from './info-widget/info-widget.component';
+import { TrackByPipe } from './pipes/track-by.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InfoWidgetComponent } from './info-widget/info-widget.component';
     WeatherWidgetComponent,
     FooterWidgetComponent,
     MainWidgetComponent,
-    InfoWidgetComponent
+    InfoWidgetComponent,
+    TrackByPipe
   ],
   imports: [
     BrowserModule,
