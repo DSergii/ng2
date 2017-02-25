@@ -15,10 +15,6 @@ import 'whatwg-fetch';
 })
 export class ReposComponent implements OnInit {
 
-
-
-    private search: string = '';
-
     public sequence$: Subject<KeyboardEvent> = new Subject<KeyboardEvent>();
 
     getSearch( $event: KeyboardEvent ) {
@@ -35,7 +31,7 @@ export class ReposComponent implements OnInit {
         		.fromPromise(fetch(`https://api.github.com/search/repositories?q=${inputEl}`)
         		.then(res => res.json())))
         	.subscribe( res => {
-        		
+
         		console.log(res);
         	})
     }
