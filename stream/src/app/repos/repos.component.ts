@@ -15,6 +15,12 @@ import 'whatwg-fetch';
 })
 export class ReposComponent implements OnInit {
 
+	public repo: Array<Repo>;
+
+	public total: number; 
+
+	public isSpinner: boolean;
+
     public sequence$: Subject<KeyboardEvent> = new Subject<KeyboardEvent>();
 
     getSearch( $event: KeyboardEvent ) {
@@ -26,14 +32,21 @@ export class ReposComponent implements OnInit {
     public ngOnInit() {
     	this.sequence$
         	.debounceTime(500)
-        	.map( (event: KeyboardEvent) => (event.target as HTMLInputElement).value )
+        	.map( (event: KeyboardEvent) => {
+
+        		this.isSpinner = true;
+        		return (event.target as HTMLInputElement).value 
+        	})
         	.switchMap( (inputEl: string) => Observable
         		.fromPromise(fetch(`https://api.github.com/search/repositories?q=${inputEl}`)
         		.then(res => res.json())))
         	.subscribe( res => {
 
-        		console.log(res);
-        	})
+        		this.isSpinner = false;
+        		this.repo = res.items;
+        		this.total = res.total_count;
+
+        	});
     }
 
 }

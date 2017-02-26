@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  text = 'Select repo';
+  logo = '../assets/github-logo.png';
 }
